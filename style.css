@@ -91,6 +91,18 @@ h1 em { font-style: italic; color: var(--accent); }
 .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .btn.primary:hover { opacity: .85; }
 
+.hero { display: grid; grid-template-columns: 1fr 300px; gap: 56px; align-items: center; }
+.portrait { position: relative; margin: 0; }
+.portrait::before {
+  content: ""; position: absolute; inset: 14px -14px -14px 14px;
+  border: 1.5px solid var(--accent); border-radius: 160px 160px 18px 18px;
+}
+.portrait img {
+  position: relative; display: block; width: 100%; aspect-ratio: 4/5;
+  object-fit: cover; object-position: center 20%;
+  border-radius: 160px 160px 18px 18px; background: var(--surface);
+}
+
 /* ---------- Page header (sub pages) ---------- */
 .page-head { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
 .page-head h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
@@ -223,7 +235,8 @@ footer a:hover { color: var(--ink); }
   .wrap { padding: 0 16px; }
   .nav .wrap { height: auto; padding-top: 12px; padding-bottom: 12px; flex-direction: column; align-items: flex-start; gap: 8px; }
   .nav ul { flex-wrap: wrap; margin-left: -12px; }
-  .hero { padding: 56px 0 48px; }
+  .hero { padding: 40px 0 48px; grid-template-columns: 1fr; gap: 36px; }
+  .portrait { order: -1; width: 200px; }
   .pillars, .stats { grid-template-columns: 1fr; }
   .entry, .skill-row { grid-template-columns: 1fr; gap: 6px; }
 }
