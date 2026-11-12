@@ -4,104 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saumya Balasooriya</title>
-  <meta name="description" content="Saumya Balasooriya: cyber security, art and social work.">
+  <meta name="description" content="Portfolio of Saumya Balasooriya: cyber security & networks, art, and social work.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="wrap topbar">
-      <div class="topbar-left">
-        <a class="mark" href="index.html" aria-label="Home">SB</a>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="art.html">Art</a></li>
-          <li><a href="social-work.html">Social Work</a></li>
-        </ul>
-      </div>
-      <div class="social">
-          <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-          <a href="mailto:saumyahanji@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.25L22 6.4V6H2zm20 2.75-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75V18h20V8.75z"/></svg></a>
-          <a href="Curriculum_Vitae_of_Saumya_Balasooriya.pdf" target="_blank" aria-label="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg></a>
-        </div>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Saumya Balasooriya</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="social-work.html">Social Work</a></li>
+      </ul>
     </div>
-    <div class="title-block wrap">
-      <a class="name" href="index.html">Saumya Balasooriya</a>
-      <hr>
-      <p class="tagline">Cyber Security. Art. Social Work.</p>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero reveal">
+      <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Systems, <em>stories</em>,<br>and service.</h1>
+      <p class="lede">
+        I'm Saumya, an IT systems analyst reading for an MSc in Cyber Security at Staffordshire University,
+        with a First Class B.Sc. in Computer Networks. Outside of technology, I make art and give my time
+        to community and social work.
+      </p>
+      <div class="contact-row">
+        <a class="btn primary" href="mailto:saumyahanji@gmail.com">Get in touch</a>
+        <a class="btn" href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="Curriculum_Vitae_of_Saumya_Balasooriya.pdf" download>Download CV</a>
+      </div>
+      </div>
+      <figure class="portrait">
+        <img src="images/portrait.jpg" alt="Portrait of Saumya Balasooriya" width="600" height="600">
+      </figure>
+    </header>
+
+    <div class="pillars">
+      <a class="pillar c-academics reveal" href="academics.html">
+        <span class="num">01</span>
+        <h2>Academics</h2>
+        <p>Cyber security and computer networks: education, research projects, certifications, professional experience and technical skills.</p>
+        <span class="go">Explore →</span>
+      </a>
+      <a class="pillar c-art reveal" href="art.html">
+        <span class="num">02</span>
+        <h2>Art</h2>
+        <p>A gallery of my creative work, with the ideas and processes behind each piece.</p>
+        <span class="go">View gallery →</span>
+      </a>
+      <a class="pillar c-social reveal" href="social-work.html">
+        <span class="num">03</span>
+        <h2>Social Work</h2>
+        <p>Volunteering, community initiatives and the causes I care about.</p>
+        <span class="go">Read more →</span>
+      </a>
     </div>
-  </header>
-
-  <main>
-    <section>
-      <div class="wrap split reveal">
-        <div class="polaroid-stack">
-          <div class="back"></div>
-          <figure class="polaroid front">
-            <svg class="clip" viewBox="0 0 26 78" aria-hidden="true"><path d="M9 22v38a4.5 4.5 0 0 0 9 0V11a7.5 7.5 0 0 0-15 0v53a10 10 0 0 0 20 0V24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-            <img src="images/portrait.jpg" alt="Portrait of Saumya Balasooriya" width="600" height="600">
-            <figcaption>Saumya</figcaption>
-          </figure>
-        </div>
-        <div class="prose">
-          <h1 class="display h-md" style="margin-bottom:28px">Networks, art &amp; community</h1>
-          <p>I'm an IT systems analyst reading for an MSc in Cyber Security at Staffordshire University. Before that I earned a First Class B.Sc. (Hons) in Computer Networks from the University of Wolverhampton.</p>
-          <p>For two years I supported organisational IT infrastructure across the APAC region at PMsquare Asia. Away from technology, I make art and give my time to community and social work.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap split flip reveal">
-        <div class="tile"><div><div class="display">01</div><small>Academics</small></div></div>
-        <div class="prose">
-          <h2 class="display h-xl">Academics</h2>
-          <p style="margin-top:24px">Cyber security, computer networks and cloud systems: my education, research projects, certifications and professional experience as an IT systems analyst.</p>
-          <a class="more" href="academics.html">Explore academics</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap split reveal">
-        <div class="tile"><div><div class="display">02</div><small>Gallery</small></div></div>
-        <div class="prose">
-          <h2 class="display h-xl">Art</h2>
-          <p style="margin-top:24px">A gallery of my creative work, with the ideas and processes behind each piece.</p>
-          <a class="more" href="art.html">View the gallery</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap split flip reveal">
-        <div class="tile"><div><div class="display">03</div><small>Community</small></div></div>
-        <div class="prose">
-          <h2 class="display h-xl">Social Work</h2>
-          <p style="margin-top:24px">Volunteering, community initiatives and the causes I care about.</p>
-          <a class="more" href="social-work.html">Read more</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <section class="contact" id="contact">
+  <footer>
     <div class="wrap">
-      <h2 class="display h-lg reveal">Get in touch</h2>
-      <a class="email text-link" href="mailto:saumyahanji@gmail.com">saumyahanji@gmail.com</a>
-      <div class="social">
-          <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-          <a href="mailto:saumyahanji@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.25L22 6.4V6H2zm20 2.75-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75V18h20V8.75z"/></svg></a>
-          <a href="Curriculum_Vitae_of_Saumya_Balasooriya.pdf" target="_blank" aria-label="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg></a>
-        </div>
+      <span>© <span data-year></span> Saumya Balasooriya</span>
+      <span><a href="mailto:saumyahanji@gmail.com">saumyahanji@gmail.com</a> · <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener">LinkedIn</a></span>
     </div>
-  </section>
-  <footer>© <span data-year></span> Saumya Balasooriya</footer>
+  </footer>
   <script src="site.js"></script>
 </body>
 </html>

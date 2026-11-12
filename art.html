@@ -4,100 +4,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Art · Saumya Balasooriya</title>
-  <meta name="description" content="Saumya Balasooriya: cyber security, art and social work.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <style>:root { --accent: var(--art); }</style>
 </head>
 <body>
-  <header>
-    <div class="wrap topbar">
-      <div class="topbar-left">
-        <a class="mark" href="index.html" aria-label="Home">SB</a>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="art.html">Art</a></li>
-          <li><a href="social-work.html">Social Work</a></li>
-        </ul>
-      </div>
-      <div class="social">
-          <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-          <a href="mailto:saumyahanji@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.25L22 6.4V6H2zm20 2.75-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75V18h20V8.75z"/></svg></a>
-          <a href="Curriculum_Vitae_of_Saumya_Balasooriya.pdf" target="_blank" aria-label="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg></a>
-        </div>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Saumya Balasooriya</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="social-work.html">Social Work</a></li>
+      </ul>
     </div>
-    <div class="title-block wrap">
-      <a class="name" href="index.html">Saumya Balasooriya</a>
-      <hr>
-      <p class="tagline">Cyber Security. Art. Social Work.</p>
-    </div>
-  </header>
+  </nav>
 
-  <main>
-    <section>
-      <div class="wrap reveal">
-        <h1 class="display h-xl">Art</h1>
-        <p class="lede">A short artist statement goes here: what you make, the mediums you work in, and what draws you to them.</p>
-        <!-- To add a real artwork: put the image in /images and replace <div class="frame" ...>Artwork</div>
-             with <img src="images/your-file.jpg" alt="Description"> -->
-        <div class="filters">
-          <button class="on" data-filter="all">All</button>
-          <button data-filter="painting">Painting</button>
-          <button data-filter="drawing">Drawing</button>
-          <button data-filter="digital">Digital</button>
-        </div>
-        <div class="gallery">
-          <figure class="art-card polaroid" data-cat="painting">
-            <div class="frame" style="--g1:#c97b4a;--g2:#6e3a20">Artwork</div>
-            <figcaption class="cap"><strong>Untitled I</strong><span>Acrylic on canvas · 2025</span></figcaption>
-          </figure>
-          <figure class="art-card polaroid" data-cat="drawing">
-            <div class="frame" style="--g1:#8a8f7a;--g2:#3f4436">Artwork</div>
-            <figcaption class="cap"><strong>Untitled II</strong><span>Graphite on paper · 2024</span></figcaption>
-          </figure>
-          <figure class="art-card polaroid" data-cat="digital">
-            <div class="frame" style="--g1:#5a7ca0;--g2:#24364a">Artwork</div>
-            <figcaption class="cap"><strong>Untitled III</strong><span>Digital illustration · 2024</span></figcaption>
-          </figure>
-          <figure class="art-card polaroid" data-cat="painting">
-            <div class="frame" style="--g1:#d9a86c;--g2:#8a5a2b">Artwork</div>
-            <figcaption class="cap"><strong>Untitled IV</strong><span>Watercolour · 2023</span></figcaption>
-          </figure>
-          <figure class="art-card polaroid" data-cat="drawing">
-            <div class="frame" style="--g1:#a77b8f;--g2:#4f3140">Artwork</div>
-            <figcaption class="cap"><strong>Untitled V</strong><span>Ink on paper · 2023</span></figcaption>
-          </figure>
-          <figure class="art-card polaroid" data-cat="digital">
-            <div class="frame" style="--g1:#6f9c8a;--g2:#2c4a3f">Artwork</div>
-            <figcaption class="cap"><strong>Untitled VI</strong><span>Digital painting · 2022</span></figcaption>
-          </figure>
-        </div>
+  <main class="wrap">
+    <header class="page-head reveal">
+      <p class="eyebrow">02 · Art</p>
+      <h1>The <em>creative</em> side</h1>
+      <p class="lede">A short artist statement goes here: what you make, the mediums you work in, and what draws you to them.</p>
+    </header>
+
+    <section class="block reveal">
+      <!-- To add a real artwork: put the image in /images and replace the <div class="frame"> with
+           <img src="images/your-file.jpg" alt="Description"> -->
+      <div class="filters">
+        <button class="on" data-filter="all">All</button>
+        <button data-filter="painting">Painting</button>
+        <button data-filter="drawing">Drawing</button>
+        <button data-filter="digital">Digital</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="art-card" data-cat="painting">
+          <div class="frame" style="--g1:#c97b4a;--g2:#6e3a20;--ratio:4/5">Artwork</div>
+          <figcaption class="cap"><strong>Untitled I</strong><span>Acrylic on canvas · 2025</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="drawing">
+          <div class="frame" style="--g1:#8a8f7a;--g2:#3f4436;--ratio:1/1">Artwork</div>
+          <figcaption class="cap"><strong>Untitled II</strong><span>Graphite on paper · 2024</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="digital">
+          <div class="frame" style="--g1:#5a7ca0;--g2:#24364a;--ratio:3/4">Artwork</div>
+          <figcaption class="cap"><strong>Untitled III</strong><span>Digital illustration · 2024</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="painting">
+          <div class="frame" style="--g1:#d9a86c;--g2:#8a5a2b;--ratio:4/3">Artwork</div>
+          <figcaption class="cap"><strong>Untitled IV</strong><span>Watercolour · 2023</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="drawing">
+          <div class="frame" style="--g1:#a77b8f;--g2:#4f3140;--ratio:4/5">Artwork</div>
+          <figcaption class="cap"><strong>Untitled V</strong><span>Ink on paper · 2023</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="digital">
+          <div class="frame" style="--g1:#6f9c8a;--g2:#2c4a3f;--ratio:1/1">Artwork</div>
+          <figcaption class="cap"><strong>Untitled VI</strong><span>Digital painting · 2022</span></figcaption>
+        </figure>
       </div>
     </section>
-
-    <div class="lightbox" role="dialog" aria-modal="true">
-      <button aria-label="Close">×</button>
-      <div class="big"></div>
-      <p></p>
-    </div>
-
   </main>
 
-  <section class="contact" id="contact">
+  <div class="lightbox" role="dialog" aria-modal="true">
+    <button aria-label="Close">×</button>
+    <div class="big"></div>
+    <p></p>
+  </div>
+
+  <footer>
     <div class="wrap">
-      <h2 class="display h-lg reveal">Get in touch</h2>
-      <a class="email text-link" href="mailto:saumyahanji@gmail.com">saumyahanji@gmail.com</a>
-      <div class="social">
-          <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-          <a href="mailto:saumyahanji@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.25L22 6.4V6H2zm20 2.75-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75V18h20V8.75z"/></svg></a>
-          <a href="Curriculum_Vitae_of_Saumya_Balasooriya.pdf" target="_blank" aria-label="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg></a>
-        </div>
+      <span>© <span data-year></span> Saumya Balasooriya</span>
+      <span><a href="mailto:saumyahanji@gmail.com">saumyahanji@gmail.com</a> · <a href="https://www.linkedin.com/in/saumya-balasooriya/" target="_blank" rel="noopener">LinkedIn</a></span>
     </div>
-  </section>
-  <footer>© <span data-year></span> Saumya Balasooriya</footer>
+  </footer>
   <script src="site.js"></script>
 </body>
 </html>
