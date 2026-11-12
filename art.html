@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Art · Saumya Balasooriya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>:root { --accent: var(--art); }</style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Saumya Balasooriya</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="social-work.html">Social Work</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header class="page-head reveal">
+      <p class="eyebrow">02 · Art</p>
+      <h1>The <em>creative</em> side</h1>
+      <p class="lede">A short artist statement goes here: what you make, the mediums you work in, and what draws you to them.</p>
+    </header>
+
+    <section class="block reveal">
+      <!-- To add a real artwork: put the image in /images and replace the <div class="frame"> with
+           <img src="images/your-file.jpg" alt="Description"> -->
+      <div class="filters">
+        <button class="on" data-filter="all">All</button>
+        <button data-filter="painting">Painting</button>
+        <button data-filter="drawing">Drawing</button>
+        <button data-filter="digital">Digital</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="art-card" data-cat="painting">
+          <div class="frame" style="--g1:#c97b4a;--g2:#6e3a20;--ratio:4/5">Artwork</div>
+          <figcaption class="cap"><strong>Untitled I</strong><span>Acrylic on canvas · 2025</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="drawing">
+          <div class="frame" style="--g1:#8a8f7a;--g2:#3f4436;--ratio:1/1">Artwork</div>
+          <figcaption class="cap"><strong>Untitled II</strong><span>Graphite on paper · 2024</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="digital">
+          <div class="frame" style="--g1:#5a7ca0;--g2:#24364a;--ratio:3/4">Artwork</div>
+          <figcaption class="cap"><strong>Untitled III</strong><span>Digital illustration · 2024</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="painting">
+          <div class="frame" style="--g1:#d9a86c;--g2:#8a5a2b;--ratio:4/3">Artwork</div>
+          <figcaption class="cap"><strong>Untitled IV</strong><span>Watercolour · 2023</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="drawing">
+          <div class="frame" style="--g1:#a77b8f;--g2:#4f3140;--ratio:4/5">Artwork</div>
+          <figcaption class="cap"><strong>Untitled V</strong><span>Ink on paper · 2023</span></figcaption>
+        </figure>
+        <figure class="art-card" data-cat="digital">
+          <div class="frame" style="--g1:#6f9c8a;--g2:#2c4a3f;--ratio:1/1">Artwork</div>
+          <figcaption class="cap"><strong>Untitled VI</strong><span>Digital painting · 2022</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true">
+    <button aria-label="Close">×</button>
+    <div class="big"></div>
+    <p></p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span data-year></span> Saumya Balasooriya</span>
+      <a href="mailto:saumyahanji@gmail.com">saumyahanji@gmail.com</a>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
