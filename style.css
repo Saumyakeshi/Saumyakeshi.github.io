@@ -178,7 +178,9 @@ section.block:last-of-type { border-bottom: 0; }
 }
 .lightbox.open { display: flex; }
 .lightbox .big { max-width: min(900px, 100%); max-height: 78vh; border-radius: 10px; overflow: hidden; }
-.lightbox .big img, .lightbox .big .frame { max-height: 78vh; width: min(640px, 90vw); }
+.lightbox .big img { max-height: 78vh; max-width: min(720px, 90vw); width: auto; height: auto; object-fit: contain; display: block; }
+.lightbox .big .frame { max-height: 78vh; width: min(640px, 90vw); }
+.lightbox p a { color: #fff; font-size: .9rem; opacity: .85; }
 .lightbox p { color: #eee; text-align: center; }
 .lightbox button {
   position: absolute; top: 18px; right: 22px; background: none; border: 0;

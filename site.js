@@ -32,6 +32,12 @@ if (lb) {
     const media = card.querySelector("img, .frame").cloneNode(true);
     big.replaceChildren(media);
     cap.textContent = card.querySelector(".cap").innerText.replace("\n", " · ");
+    if (card.dataset.ig) {
+      const a = document.createElement("a");
+      a.href = card.dataset.ig; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "View on Instagram ↗";
+      cap.append(document.createElement("br"), a);
+    }
     lb.classList.add("open");
   }));
   const close = () => lb.classList.remove("open");
