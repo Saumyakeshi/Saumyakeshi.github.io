@@ -255,7 +255,7 @@ footer a:hover { color: var(--ink); }
   .nav .wrap { height: auto; padding-top: 12px; padding-bottom: 12px; flex-direction: column; align-items: flex-start; gap: 8px; }
   .nav ul { flex-wrap: wrap; margin-left: -12px; }
   .hero { padding: 40px 0 48px; grid-template-columns: 1fr; gap: 36px; }
-  .hero-photos { order: -1; width: min(260px, 72%); }
+  .hero-photos { order: -1; width: min(260px, 72%); justify-self: center; margin: 0 auto; }
   .pillars, .stats { grid-template-columns: 1fr; }
   .event-row.two, .event-row.three { grid-template-columns: 1fr 1fr; }
   .event-feature { grid-template-columns: 1fr; }
