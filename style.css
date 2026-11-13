@@ -204,6 +204,24 @@ section.block:last-of-type { border-bottom: 0; }
   padding: 14px 18px; border-radius: 8px; font-size: 0.9rem; color: var(--ink); margin-bottom: 28px;
 }
 
+/* ---------- Event photo story ---------- */
+.event-row { display: grid; gap: 16px; margin-bottom: 16px; }
+.event-row.one { grid-template-columns: 1fr; }
+.event-row.two { grid-template-columns: repeat(2, 1fr); }
+.event-row.three { grid-template-columns: repeat(3, 1fr); }
+.event-row .art-card { margin: 0; break-inside: auto; }
+.event-row .art-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.event-row.two .art-card img { aspect-ratio: 16/10; }
+.event-row .art-card.feature img { aspect-ratio: 16/8; object-position: center 35%; }
+.event-row .cap { padding: 12px 16px; }
+.event-row .cap strong { display: block; font-weight: 600; font-size: 0.95rem; }
+.event-row .cap span { color: var(--muted); font-size: 0.85rem; }
+.event-step {
+  display: flex; align-items: baseline; gap: 12px;
+  font-family: var(--serif); font-weight: 500; font-size: 1.3rem; margin: 40px 0 16px;
+}
+.event-step span { font-size: 0.9rem; color: var(--accent); letter-spacing: .08em; }
+
 /* ---------- Footer ---------- */
 footer { border-top: 1px solid var(--line); padding: 40px 0; color: var(--muted); font-size: 0.9rem; }
 footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
@@ -223,5 +241,7 @@ footer a:hover { color: var(--ink); }
   .hero { padding: 40px 0 48px; grid-template-columns: 1fr; gap: 36px; }
   .portrait { order: -1; width: 180px; height: 180px; }
   .pillars, .stats { grid-template-columns: 1fr; }
+  .event-row.two, .event-row.three { grid-template-columns: 1fr 1fr; }
+  .event-row .art-card.feature img { aspect-ratio: 4/3; }
   .entry, .skill-row { grid-template-columns: 1fr; gap: 6px; }
 }
